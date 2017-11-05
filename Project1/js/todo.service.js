@@ -4,6 +4,7 @@ function  TodoService($http) {
 
   function   create(todo) {
      return $http.post(API, todo).then(function (response) {
+         console.log(response);
         return response.data;
      });
   }
